@@ -1,0 +1,128 @@
+.products {
+  padding: var(--section-padding);
+  background: var(--bg-light);
+}
+
+.products__carousel {
+  position: relative;
+  padding: 0;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.products__slide {
+  text-align: center;
+}
+
+.products__image {
+  aspect-ratio: 1;
+  border-radius: var(--radius);
+  overflow: hidden;
+  margin-bottom: 16px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  background: var(--white);
+}
+
+.products__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.products__image:hover {
+  transform: scale(1.03);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+}
+
+.products__name {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.products__cta {
+  text-align: center;
+  margin-top: 40px;
+}
+
+/* Swiper customization */
+.products .swiper {
+  padding-bottom: 50px;
+}
+
+.products__nav {
+  position: absolute;
+  bottom: 8px;
+  width: 36px;
+  height: 36px;
+  background: var(--primary);
+  color: var(--white);
+  border: none;
+  border-radius: 50%;
+  font-size: 1rem;
+  cursor: pointer;
+  z-index: 10;
+  transition: background 0.2s ease, transform 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.products__nav:hover {
+  background: var(--primary-dark);
+  transform: scale(1.1);
+}
+
+.products__nav-prev {
+  left: 0;
+}
+
+.products__nav-next {
+  right: 0;
+}
+
+.products__nav.swiper-button-disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.products .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background: var(--primary-light);
+  opacity: 0.4;
+}
+
+.products .swiper-pagination-bullet-active {
+  opacity: 1;
+  background: var(--primary);
+}
+
+.products .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background: var(--primary-light);
+  opacity: 0.4;
+}
+
+.products .swiper-pagination-bullet-active {
+  opacity: 1;
+  background: var(--primary);
+}
+
+@media (max-width: 768px) {
+  .products__placeholder {
+    font-size: 3rem;
+  }
+
+  .products__name {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .products__carousel {
+    padding: 0;
+  }
+}
