@@ -86,7 +86,7 @@ function Contact() {
               className="contact__map-card"
             >
               <div className="contact__map-icon">
-                <img src="/images/google maps logo.jpg" alt="Google Maps" />
+                <img src={`${import.meta.env.BASE_URL}images/google maps logo.jpg`} alt="Google Maps" />
               </div>
               <div className="contact__map-content">
                 <h4>Open in Google Maps</h4>

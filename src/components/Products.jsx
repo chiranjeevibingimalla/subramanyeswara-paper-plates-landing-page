@@ -9,39 +9,39 @@ import './Products.css'
 const products = [
   {
     name: 'Eco-Friendly 13" Plates',
-    image: '/images/plates/plates1.jpg',
+    image: 'images/plates/plates1.jpg',
   },
   {
     name: '12" Buffet Paper Plates',
-    image: '/images/plates/plates2.jpg',
+    image: 'images/plates/plates2.jpg',
   },
   {
     name: 'Printed Regular Plates',
-    image: '/images/plates/plates8.jpg',
+    image: 'images/plates/plates8.jpg',
   },
   {
     name: 'Silver Buffet Plates',
-    image: '/images/plates/silver buffet paper plates.jpg',
+    image: 'images/plates/silver buffet paper plates.jpg',
   },
   {
     name: '125ml Paper Cups',
-    image: '/images/water glasses/glass1.jpg',
+    image: 'images/water glasses/glass1.jpg',
   },
   {
     name: '110ml Paper Cups',
-    image: '/images/water glasses/glass2.jpg',
+    image: 'images/water glasses/glass2.jpg',
   },
   {
     name: '150ml Tea & Coffee Cups',
-    image: '/images/water glasses/glass3.jpg',
+    image: 'images/water glasses/glass3.jpg',
   },
   {
     name: 'Plastic Carry Bags',
-    image: '/images/plastic bags/bag4.jpg',
+    image: 'images/plastic bags/bag4.jpg',
   },
   {
     name: 'Plastic Carry Bags',
-    image: '/images/plastic bags/bag1.jpg',
+    image: 'images/plastic bags/bag1.jpg',
   },
 ]
 
@@ -89,7 +89,7 @@ function Products() {
               <SwiperSlide key={index}>
                 <div className="products__slide">
                   <div className="products__image">
-                    <img src={product.image} alt={product.name} />
+                    <img src={`${import.meta.env.BASE_URL}${product.image}`} alt={product.name} />
                   </div>
                   <p className="products__name">{product.name}</p>
                 </div>

@@ -1,12 +1,12 @@
 import './Gallery.css'
 
 const galleryItems = [
-  { label: 'Various Buffet Paper Plates', image: '/images/plates/various paper plates.jpg' },
-  { label: 'Quality Raw Materials', image: '/images/plates/raw material.jpg' },
-  { label: 'Bulk Packaging', image: '/images/plates/plates bundles.jpg' },
-  { label: 'Square Paper Plates', image: '/images/plates/square paper plates.avif' },
-  { label: 'Spoons', image: '/images/spoons/spoons6.jpg' },
-  { label: 'Spoons', image: '/images/spoons/spoons1.jpg' },
+  { label: 'Various Buffet Paper Plates', image: 'images/plates/various paper plates.jpg' },
+  { label: 'Quality Raw Materials', image: 'images/plates/raw material.jpg' },
+  { label: 'Bulk Packaging', image: 'images/plates/plates bundles.jpg' },
+  { label: 'Square Paper Plates', image: 'images/plates/square paper plates.avif' },
+  { label: 'Spoons', image: 'images/spoons/spoons6.jpg' },
+  { label: 'Spoons', image: 'images/spoons/spoons1.jpg' },
 ]
 
 function Gallery() {
@@ -21,7 +21,7 @@ function Gallery() {
         <div className="gallery__grid">
           {galleryItems.map((item, index) => (
             <div key={index} className="gallery__item">
-              <img src={item.image} alt={item.label} />
+              <img src={`${import.meta.env.BASE_URL}${item.image}`} alt={item.label} />
               <p className="gallery__label">{item.label}</p>
             </div>
           ))}

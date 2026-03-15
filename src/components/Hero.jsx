@@ -39,7 +39,7 @@ function Hero() {
           </div>
         </div>
         <div className="hero__image">
-          <img src="/images/Main.jpeg" alt="Subramanyeswara Paper Plates Products" />
+          <img src={`${import.meta.env.BASE_URL}images/Main.jpeg`} alt="Subramanyeswara Paper Plates Products" />
         </div>
       </div>
     </section>

@@ -10,7 +10,7 @@ function Footer() {
           <div className="footer__brand">
             <h3>
               <img 
-                src="/images/lord-subramanyeswara.jpg" 
+                src={`${import.meta.env.BASE_URL}images/lord-subramanyeswara.jpg`} 
                 alt="Lord Subramanyeswara" 
                 className="footer__logo"
               />

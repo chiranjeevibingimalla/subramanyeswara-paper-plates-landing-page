@@ -23,7 +23,7 @@ function Navbar() {
     <nav className={`navbar ${scrolled ? 'navbar--scrolled' : ''} ${menuOpen ? 'navbar--open' : ''}`}>
       <div className="container navbar__inner">
         <a href="#hero" className="navbar__logo">
-          <img src="/images/lord-subramanyeswara.jpg" alt="Lord Subramanyeswara" className="navbar__logo-img" />
+          <img src={`${import.meta.env.BASE_URL}images/lord-subramanyeswara.jpg`} alt="Lord Subramanyeswara" className="navbar__logo-img" />
           <span className="navbar__logo-text">Subramanyeswara<br /><small>Paper Plates</small></span>
         </a>
 
